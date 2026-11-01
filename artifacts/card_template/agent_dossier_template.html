@@ -1,0 +1,469 @@
+<!doctype html>
+<!--
+AGENT DOSSIER CARD TEMPLATE -- Phantom Doctrine Hintforge companion
+
+Agents in Phantom Doctrine are randomly generated for each playthrough, so this
+guide ships no prebuilt cards. This file is the template. Ask your AI agent for
+a dossier card on one of your agents: it runs the save reader on your save,
+copies this file once per agent, and fills it with that agent's real numbers.
+
+How your AI agent fills it:
+  1. Run `python save_extract.py` from the guide folder. It finds your newest
+     save in the game's standard save folder
+     (%LOCALAPPDATA%\PhantomDoctrine\Saved\<your Steam ID>\SaveGames); if
+     your saves live elsewhere, set the PHANTOM_DOCTRINE_SAVE_DIR environment
+     variable to that folder. Field meanings: `save_schema.md`. Match the agent
+     on `uniqueid`. Use `current_stats` for an agent, never `base_stats`,
+     unless the extractor says current stats could not be computed; then take
+     the four numbers from an in-game dossier screenshot instead.
+  2. Replace every {{PLACEHOLDER}} in the HTML below.
+  3. In the <script> block set:
+       BASE     the agent's CURRENT primary stats (circ, resp, sens, moto)
+       APPLIED  compounds already in the agent (`compounds_named` from the
+                extractor). Leave [] only when the agent has no save row yet,
+                and say so in the Body Engineering note.
+       ROUTE_AP / ROUTE_MOTO  the recommended sequence(s), from
+                `items/abilities.md`. The defaults below are the generic
+                single-step 3-AP route and the full Motoric route.
+  4. Fill the Perks and Next Training sections from the agent's owned perks,
+     talents and trainings (save ids in the extractor output; names and
+     effects in `items/abilities.md`). Mark anything not read off the save or
+     an in-game tooltip as unconfirmed, never guessed from an icon's shape.
+
+Body Engineering blocks are FORWARD-ONLY (`items/abilities.md`, compound
+block rule): applying X bars only compounds not yet taken, never one already
+applied. The builder below enforces that.
+
+Breakpoints: 100 / 140 Motoric give the 3rd / 4th Action Point; 150 / 200
+Circulatory give the 2nd / 3rd Focus Point (`mechanics.md`).
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Agent Dossier</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Spectral:wght@400;600&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<style>
+  :root {
+    --ink: #1c1a13; --paper: #e8e1c9; --paper-alt: #ddd4b4; --paper-card: #f1ebd7;
+    --rule: #c7bb94; --accent: #a63328; --olive: #565c3f; --olive-ink: #f2f0e4;
+    --brass: #8a6a2f; --muted: #726b52;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #e6ddc0; --paper: #16150e; --paper-alt: #201e14; --paper-card: #1c1b12;
+      --rule: #3c3925; --accent: #e2594c; --olive: #97a06c; --olive-ink: #14170c;
+      --brass: #d3aa5b; --muted: #a49b7c;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #e6ddc0; --paper: #16150e; --paper-alt: #201e14; --paper-card: #1c1b12;
+    --rule: #3c3925; --accent: #e2594c; --olive: #97a06c; --olive-ink: #14170c;
+    --brass: #d3aa5b; --muted: #a49b7c;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font-family: 'Spectral', Georgia, 'Times New Roman', serif;
+    font-size: 16px; line-height: 1.55;
+    padding: clamp(20px, 5vw, 56px) 16px 80px;
+  }
+  .sheet { max-width: 760px; margin: 0 auto; }
+  .masthead {
+    display: flex; justify-content: space-between; align-items: flex-end;
+    border-bottom: 3px solid var(--ink); padding-bottom: 10px; margin-bottom: 4px;
+    font-family: 'IBM Plex Mono', 'Courier New', monospace; font-size: 0.72rem;
+    letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
+  }
+  .id-block { padding: 22px 0 26px; border-bottom: 1px solid var(--rule); }
+  .id-block h1 {
+    font-family: 'Special Elite', 'Courier New', monospace;
+    font-size: clamp(2.1rem, 6vw, 3rem); letter-spacing: 0.03em; margin: 0 0 2px;
+  }
+  .real-name { font-family: 'IBM Plex Mono', monospace; font-size: 0.95rem; color: var(--muted); }
+  .id-tags { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+  .tag {
+    font-family: 'IBM Plex Mono', monospace; font-size: 0.68rem; letter-spacing: 0.1em;
+    text-transform: uppercase; padding: 4px 10px; border: 1px solid currentColor;
+  }
+  .tag.status { color: var(--olive); }
+  .tag.bg { color: var(--brass); }
+  section { margin-top: 34px; }
+  .section-head { display: flex; align-items: baseline; gap: 10px; margin-bottom: 14px; }
+  .section-num { font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--muted); }
+  h2 {
+    font-family: 'Special Elite', 'Courier New', monospace; font-size: 1.05rem;
+    letter-spacing: 0.08em; text-transform: uppercase; margin: 0;
+  }
+  .section-rule { flex: 1; height: 1px; background: var(--rule); }
+  p { max-width: 62ch; }
+  .stat-grid { display: grid; gap: 10px; }
+  .stat-row { display: grid; grid-template-columns: 96px 1fr 160px; align-items: center; gap: 12px; }
+  .stat-name {
+    font-family: 'IBM Plex Mono', monospace; font-size: 0.74rem; letter-spacing: 0.05em;
+    text-transform: uppercase; color: var(--muted);
+  }
+  .stat-track {
+    position: relative; height: 10px; background: var(--paper-alt);
+    border: 1px solid var(--rule); overflow: hidden;
+  }
+  .stat-fill { position: absolute; inset: 0 auto 0 0; background: var(--olive); }
+  .stat-values {
+    font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums;
+    font-size: 0.82rem; text-align: right; white-space: nowrap;
+  }
+  .stat-values .target { color: var(--muted); }
+  .vitals {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    gap: 1px; background: var(--rule); border: 1px solid var(--rule); margin-top: 16px;
+  }
+  .vital { background: var(--paper-card); padding: 10px 12px; }
+  .vital .k {
+    font-family: 'IBM Plex Mono', monospace; font-size: 0.62rem; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--muted); display: block;
+  }
+  .vital .v { font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums; font-size: 1.15rem; }
+  .vital .v.gained { color: var(--accent); font-weight: 600; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+  th, td { text-align: left; padding: 7px 8px; border-top: 1px solid var(--rule); vertical-align: top; }
+  th { font-family: 'IBM Plex Mono', monospace; font-size: 0.66rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+  .roadmap-note {
+    background: var(--paper-card); border-left: 3px solid var(--accent);
+    padding: 10px 14px; font-size: 0.88rem; margin-bottom: 18px;
+  }
+  .roadmap-target { margin-top: 18px; font-family: 'IBM Plex Mono', monospace; font-size: 0.86rem; color: var(--muted); }
+  .roadmap-target b { color: var(--ink); font-variant-numeric: tabular-nums; }
+  .builder-controls { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 14px; }
+  .btn {
+    font-family: 'IBM Plex Mono', monospace; font-size: 0.76rem; letter-spacing: 0.04em;
+    text-transform: uppercase; padding: 8px 14px; background: var(--paper-card);
+    border: 1px solid var(--ink); color: var(--ink); cursor: pointer;
+  }
+  .btn:hover { background: var(--paper-alt); }
+  .btn-primary { background: var(--olive); color: var(--olive-ink); border-color: var(--olive); }
+  .btn:focus-visible, .compound-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .builder-hint { font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--muted); }
+  .sequence-trail {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 6px; min-height: 34px;
+    padding: 10px 12px; background: var(--paper-card); border: 1px solid var(--rule);
+    margin-bottom: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 0.78rem;
+  }
+  .trail-step { background: var(--olive); color: var(--olive-ink); padding: 3px 8px; }
+  .trail-arrow { color: var(--muted); }
+  .compound-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(148px, 1fr)); gap: 8px; }
+  .compound-btn {
+    font-family: 'IBM Plex Mono', monospace; text-align: left; background: var(--paper-card);
+    border: 1px solid var(--olive); color: var(--ink); padding: 8px 9px; cursor: pointer;
+  }
+  .compound-btn .cname { display: block; font-size: 0.82rem; font-weight: 600; margin-bottom: 4px; }
+  .compound-btn .cdeltas { display: block; font-size: 0.66rem; color: var(--muted); }
+  .compound-btn .cdeltas .pos { color: var(--olive); }
+  .compound-btn .cdeltas .neg { color: var(--accent); }
+  .compound-btn.selected { background: var(--olive); border-color: var(--olive); }
+  .compound-btn.selected .cname,
+  .compound-btn.selected .cdeltas,
+  .compound-btn.selected .cdeltas .pos,
+  .compound-btn.selected .cdeltas .neg { color: var(--olive-ink); }
+  .compound-btn.locked { cursor: not-allowed; opacity: 0.42; border-style: dashed; }
+  .compound-btn.recommended-step { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); }
+  .compound-btn .clock { display: block; font-size: 0.56rem; color: var(--muted); margin-top: 3px; }
+  ol.ranked li { margin-bottom: 6px; }
+  footer {
+    margin-top: 44px; padding-top: 14px; border-top: 1px solid var(--rule);
+    font-family: 'IBM Plex Mono', monospace; font-size: 0.68rem; color: var(--muted);
+  }
+  @media (max-width: 560px) { .stat-row { grid-template-columns: 76px 1fr 120px; } }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <div class="masthead"><span>Beholder Initiative // Agent Dossier</span><span>{{SAVE_SLOT}} &middot; day {{IN_GAME_DAY}}</span></div>
+
+  <div class="id-block">
+    <h1>{{CODENAME}}</h1>
+    <div class="real-name">{{REAL_NAME}} &middot; uniqueid {{UNIQUEID}}</div>
+    <div class="id-tags">
+      <span class="tag status">{{STATUS}}</span>
+      <span class="tag bg">{{BACKGROUND}}</span>
+      <span class="tag">{{ROLE}}</span>
+    </div>
+  </div>
+
+  <section>
+    <div class="section-head"><span class="section-num">01</span><h2>Core Stats</h2><span class="section-rule"></span></div>
+    <p style="font-size:0.86rem;color:var(--muted);margin-top:0;">Current stats, from {{STATS_SOURCE}}. Bars move with the Body Engineering selection below.</p>
+    <div class="stat-grid">
+      <div class="stat-row"><span class="stat-name">Circulatory</span><span class="stat-track"><span class="stat-fill" id="fill-circ"></span></span><span class="stat-values"><span id="val-circ"></span> <span class="target" id="gap-fp"></span></span></div>
+      <div class="stat-row"><span class="stat-name">Respiratory</span><span class="stat-track"><span class="stat-fill" id="fill-resp"></span></span><span class="stat-values"><span id="val-resp"></span></span></div>
+      <div class="stat-row"><span class="stat-name">Sensory</span><span class="stat-track"><span class="stat-fill" id="fill-sens"></span></span><span class="stat-values"><span id="val-sens"></span></span></div>
+      <div class="stat-row"><span class="stat-name">Motoric</span><span class="stat-track"><span class="stat-fill" id="fill-moto"></span></span><span class="stat-values"><span id="val-moto"></span> <span class="target" id="gap-ap"></span></span></div>
+    </div>
+    <div class="vitals">
+      <div class="vital"><span class="k">Action Points</span><span class="v" id="val-ap"></span></div>
+      <div class="vital"><span class="k">Focus Points</span><span class="v" id="val-fp"></span></div>
+      <div class="vital"><span class="k">HP</span><span class="v">{{HP}}</span></div>
+      <div class="vital"><span class="k">Awareness</span><span class="v">{{AWARENESS}}</span></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head"><span class="section-num">02</span><h2>Perks &amp; Training</h2><span class="section-rule"></span></div>
+    <table>
+      <thead><tr><th>Name</th><th>Type</th><th>Effect</th><th>How confirmed</th></tr></thead>
+      <tbody>
+        <tr><td>{{PERK_NAME}}</td><td>{{perk / talent / training}}</td><td>{{one-line effect, from items/abilities.md}}</td><td>{{save id, in-game tooltip + date, or "unconfirmed"}}</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <div class="section-head"><span class="section-num">03</span><h2>Body Engineering Route</h2><span class="section-rule"></span></div>
+
+    <div class="roadmap-note">{{APPLIED_NOTE: which compounds the agent already carries, and where that came from. If the agent has no save row yet, say the applied list is unknown, so the grid may offer a compound already taken.}}</div>
+
+    <div class="builder-controls">
+      <button type="button" class="btn btn-primary" id="btn-ap">Fastest route to 3 Action Points</button>
+      <button type="button" class="btn" id="btn-moto">Full Motoric route</button>
+      <button type="button" class="btn" id="btn-reset">Reset</button>
+      <span class="builder-hint" id="builder-hint">Click any compound to build a sequence. Locked ones tell you why.</span>
+    </div>
+
+    <div class="sequence-trail" id="sequence-trail" aria-live="polite"></div>
+    <div class="compound-grid" id="compound-grid" role="group" aria-label="Body Engineering compounds"></div>
+
+    <p class="roadmap-target">Selected totals: <b id="tot-circ">0</b> Circulatory &middot; <b id="tot-resp">0</b> Respiratory &middot; <b id="tot-sens">0</b> Sensory &middot; <b id="tot-moto">0</b> Motoric, on top of the current stats above.</p>
+
+    <div class="roadmap-note" style="margin-top:16px;"><strong>Thresholds:</strong> 3 Action Points needs 100 Motoric, 4 AP needs 140. 2 Focus Points needs 150 Circulatory, 3 FP needs 200.</div>
+    <div class="roadmap-note"><strong>Block rule:</strong> applying a compound only bars compounds not yet taken. It never removes one already applied. Compound unlocks are chapter-gated, so take only steps you have unlocked. Source: <code>items/abilities.md</code>.</div>
+  </section>
+
+  <section>
+    <div class="section-head"><span class="section-num">04</span><h2>Recommended Next Training</h2><span class="section-rule"></span></div>
+    <p><strong>{{TRAINING_NAME}}</strong>: {{one-line why, tied to this agent's numbers}}</p>
+    <ol class="ranked">
+      <li>{{fallback 1}}</li>
+      <li>{{fallback 2}}</li>
+    </ol>
+  </section>
+
+  <section>
+    <div class="section-head"><span class="section-num">05</span><h2>Open Flags</h2><span class="section-rule"></span></div>
+    <ul><li>{{Anything unconfirmed, and what would confirm it}}</li></ul>
+  </section>
+
+  <footer>Built from {{SAVE_SLOT}} on {{DATE}} with save_extract.py. Compound data: items/abilities.md.</footer>
+</div>
+
+<script>
+(function () {
+  // REPLACE: the agent's CURRENT primary stats (save_extract.py current_stats).
+  var BASE = { circ: 80, resp: 75, sens: 80, moto: 85 };
+  var SCALE = 220;
+  // REPLACE: compounds already applied (save_extract.py compounds_named).
+  var APPLIED = [];
+
+  var COMPOUNDS = [
+    { id: 'AMPEA',       circ: 14, sens: 15, resp: 7,  moto: 8,   requires: null,          blocks: ['Calusterone'] },
+    { id: 'THG',         circ: 17, sens: 14, resp: 17, moto: 8,   requires: null,          blocks: ['ARGOXY', 'Raloxifene'] },
+    { id: 'TST',         circ: 7,  sens: 15, resp: 13, moto: 9,   requires: null,          blocks: ['Gonadorelin'] },
+    { id: 'BMA',         circ: 9,  sens: 10, resp: 15, moto: 16,  requires: null,          blocks: ['Danazol', 'AMPK'] },
+    { id: 'Bolasterone', circ: -1, sens: 0,  resp: 11, moto: -1,  requires: null,          blocks: ['Stanozolol', 'Formoterol'] },
+    { id: 'DXAMPEA',     circ: 8,  sens: 11, resp: 7,  moto: 11,  requires: null,          blocks: ['XENOXY', 'Albumin'] },
+    { id: 'Gonadorelin', circ: 2,  sens: -4, resp: 1,  moto: 16,  requires: null,          blocks: ['Anadrol'] },
+    { id: 'EPO',         circ: 13, sens: 0,  resp: 0,  moto: -2,  requires: 'AMPEA',       blocks: ['THG'] },
+    { id: 'Danazol',     circ: -2, sens: 15, resp: 0,  moto: 2,   requires: 'DXAMPEA',     blocks: ['FGF'] },
+    { id: 'DHEA',        circ: 13, sens: 9,  resp: 12, moto: 19,  requires: 'BMA',         blocks: ['Formebolone'] },
+    { id: 'Anadrol',     circ: 17, sens: 11, resp: 14, moto: 14,  requires: 'TST',         blocks: ['Mannitol'] },
+    { id: 'Bolandiol',   circ: -2, sens: 1,  resp: 8,  moto: -3,  requires: 'Bolasterone', blocks: ['FGF'] },
+    { id: 'Calusterone', circ: 0,  sens: 0,  resp: 10, moto: -2,  requires: 'Bolandiol',   blocks: ['Cyclofenil'] },
+    { id: 'Cyclofenil',  circ: 18, sens: 29, resp: -19,moto: 20,  requires: 'Bolandiol',   blocks: ['Anadrol'] },
+    { id: 'Formebolone', circ: -1, sens: 10, resp: 2,  moto: 3,   requires: 'Danazol',     blocks: ['DHEA'] },
+    { id: 'Mannitol',    circ: 38, sens: 0,  resp: 24, moto: -10, requires: 'Danazol',     blocks: ['XENOXY'] },
+    { id: 'ARGOXY',      circ: 10, sens: 0,  resp: -1, moto: 0,   requires: 'EPO',         blocks: ['Formebolone'] },
+    { id: 'AMPK',        circ: 22, sens: -10,resp: 0,  moto: 32,  requires: 'Raloxifene',  blocks: ['BMA'] },
+    { id: 'Raloxifene',  circ: 0,  sens: -15,resp: 19, moto: -10, requires: 'ARGOXY',      blocks: ['DHEA'] },
+    { id: 'XENOXY',      circ: 17, sens: 0,  resp: 0,  moto: -4,  requires: 'ARGOXY',      blocks: ['TST', 'Formoterol'] },
+    { id: 'Albumin',     circ: -10,sens: 30, resp: 24, moto: 6,   requires: 'AMPK',        blocks: ['TST'] },
+    { id: 'IGF-1',       circ: -10,sens: 28, resp: 19, moto: 31,  requires: 'Albumin',     blocks: ['Formoterol'] },
+    { id: 'FGF',         circ: -5, sens: 3,  resp: 1,  moto: 8,   requires: 'Gonadorelin', blocks: ['Stanozolol', 'Raloxifene'] },
+    { id: 'Formoterol',  circ: 2,  sens: 2,  resp: 0,  moto: 14,  requires: 'FGF',         blocks: ['AMPK'] },
+    { id: 'Stanozolol',  circ: 0,  sens: 9,  resp: 0,  moto: 5,   requires: 'Formebolone', blocks: ['Albumin'] }
+  ];
+
+  // REPLACE if this agent needs a different route (items/abilities.md).
+  var ROUTE_AP = ['Gonadorelin'];
+  var ROUTE_MOTO = ['AMPEA', 'Bolasterone', 'EPO', 'ARGOXY', 'Gonadorelin', 'Raloxifene',
+                    'AMPK', 'FGF', 'Bolandiol', 'Cyclofenil', 'TST', 'Albumin', 'DXAMPEA',
+                    'Danazol', 'IGF-1'];
+  var activeRoute = null;
+
+  var byId = {};
+  COMPOUNDS.forEach(function (c) { byId[c.id] = c; });
+  var selected = [];
+
+  function isApplied(id) { return APPLIED.indexOf(id) !== -1; }
+  function isSelected(id) { return isApplied(id) || selected.indexOf(id) !== -1; }
+
+  function blockedBy(id) {
+    var all = APPLIED.concat(selected);
+    for (var i = 0; i < all.length; i++) {
+      if (byId[all[i]] && byId[all[i]].blocks.indexOf(id) !== -1) return all[i];
+    }
+    return null;
+  }
+
+  // Blocks are forward-only: applying X only bars compounds not yet taken.
+  function lockReason(id) {
+    var c = byId[id];
+    if (c.requires && !isSelected(c.requires)) return 'requires ' + c.requires;
+    var blocker = blockedBy(id);
+    if (blocker) return 'blocked by ' + blocker;
+    return null;
+  }
+
+  function toggle(id) {
+    if (isApplied(id)) return;
+    if (isSelected(id)) {
+      var toRemove = [id], changed = true;
+      while (changed) {
+        changed = false;
+        selected.forEach(function (sid) {
+          if (toRemove.indexOf(sid) === -1 && byId[sid].requires &&
+              toRemove.indexOf(byId[sid].requires) !== -1) {
+            toRemove.push(sid); changed = true;
+          }
+        });
+      }
+      selected = selected.filter(function (sid) { return toRemove.indexOf(sid) === -1; });
+    } else {
+      if (lockReason(id)) return;
+      selected.push(id);
+    }
+    activeRoute = null;
+    render();
+  }
+
+  function totals() {
+    var t = { circ: BASE.circ, resp: BASE.resp, sens: BASE.sens, moto: BASE.moto };
+    selected.forEach(function (id) {
+      var c = byId[id];
+      t.circ += c.circ; t.resp += c.resp; t.sens += c.sens; t.moto += c.moto;
+    });
+    return t;
+  }
+
+  function apFor(moto) { return moto >= 140 ? 4 : (moto >= 100 ? 3 : 2); }
+  function fpFor(circ) { return circ >= 200 ? 3 : (circ >= 150 ? 2 : 1); }
+
+  function fmtDelta(n) {
+    var cls = n > 0 ? 'pos' : (n < 0 ? 'neg' : '');
+    return '<span class="' + cls + '">' + (n > 0 ? '+' : '') + n + '</span>';
+  }
+
+  function setBar(key, value) {
+    document.getElementById('fill-' + key).style.width =
+      Math.max(0, Math.min(100, (value / SCALE) * 100)) + '%';
+    document.getElementById('val-' + key).textContent = value;
+  }
+
+  function nextGap(value, steps, unit) {
+    for (var i = 0; i < steps.length; i++) {
+      if (value < steps[i][0]) return (steps[i][0] - value) + ' to ' + steps[i][1] + ' ' + unit;
+    }
+    return 'max ' + unit;
+  }
+
+  function render() {
+    var t = totals();
+    setBar('circ', t.circ); setBar('resp', t.resp);
+    setBar('sens', t.sens); setBar('moto', t.moto);
+
+    var apEl = document.getElementById('val-ap'), fpEl = document.getElementById('val-fp');
+    apEl.textContent = apFor(t.moto); fpEl.textContent = fpFor(t.circ);
+    apEl.classList.toggle('gained', apFor(t.moto) > apFor(BASE.moto));
+    fpEl.classList.toggle('gained', fpFor(t.circ) > fpFor(BASE.circ));
+
+    document.getElementById('gap-ap').textContent = nextGap(t.moto, [[100, 3], [140, 4]], 'AP');
+    document.getElementById('gap-fp').textContent = nextGap(t.circ, [[150, 2], [200, 3]], 'FP');
+
+    ['circ', 'resp', 'sens', 'moto'].forEach(function (k) {
+      var d = t[k] - BASE[k];
+      document.getElementById('tot-' + k).textContent = (d >= 0 ? '+' : '') + d;
+    });
+    renderTrail(); renderGrid();
+  }
+
+  function renderTrail() {
+    var el = document.getElementById('sequence-trail');
+    if (!selected.length) { el.innerHTML = '<span class="trail-step">no compounds selected</span>'; return; }
+    el.innerHTML = selected.map(function (id, i) {
+      return (i > 0 ? '<span class="trail-arrow">&rarr;</span>' : '') +
+        '<span class="trail-step">' + (i + 1) + '. ' + id + '</span>';
+    }).join('');
+  }
+
+  function renderGrid() {
+    var grid = document.getElementById('compound-grid');
+    grid.innerHTML = '';
+    COMPOUNDS.forEach(function (c) {
+      var btn = document.createElement('button');
+      btn.type = 'button';
+      var sel = isSelected(c.id);
+      var reason = sel ? null : lockReason(c.id);
+      var route = activeRoute || ROUTE_AP;
+      var isNextStep = !sel && !reason && route.indexOf(c.id) === selected.length;
+      btn.className = 'compound-btn' + (sel ? ' selected' : '') +
+        (reason ? ' locked' : '') + (isNextStep ? ' recommended-step' : '');
+      btn.setAttribute('aria-pressed', sel ? 'true' : 'false');
+      if (reason) btn.title = 'Locked: ' + reason;
+      else if (isNextStep) btn.title = 'Next step in the highlighted route';
+      btn.innerHTML = '<span class="cname">' + c.id + (isApplied(c.id) ? ' (applied)' : '') +
+        (isNextStep ? ' &#9733;' : '') + '</span>' +
+        '<span class="cdeltas">C' + fmtDelta(c.circ) + ' R' + fmtDelta(c.resp) +
+        ' S' + fmtDelta(c.sens) + ' M' + fmtDelta(c.moto) + '</span>' +
+        (reason ? '<span class="clock">' + reason + '</span>' : '');
+      btn.addEventListener('click', function () { toggle(c.id); });
+      grid.appendChild(btn);
+    });
+  }
+
+  function routeHint(route) {
+    var t = { circ: BASE.circ, moto: BASE.moto };
+    route.forEach(function (id) { if (!isApplied(id)) { t.circ += byId[id].circ; t.moto += byId[id].moto; } });
+    return route.length + ' step(s): Motoric ' + BASE.moto + ' to ' + t.moto +
+      ', Circulatory ' + BASE.circ + ' to ' + t.circ + ' (' + apFor(t.moto) + ' AP, ' + fpFor(t.circ) + ' FP).';
+  }
+
+  function applyRoute(route) {
+    selected = [];
+    for (var i = 0; i < route.length; i++) {
+      if (isApplied(route[i])) continue;
+      if (lockReason(route[i])) {
+        document.getElementById('builder-hint').textContent =
+          'Route stops at ' + route[i] + ': ' + lockReason(route[i]) + '.';
+        activeRoute = route; render(); return;
+      }
+      selected.push(route[i]);
+    }
+    activeRoute = route;
+    document.getElementById('builder-hint').textContent = routeHint(route);
+    render();
+  }
+
+  document.getElementById('btn-ap').addEventListener('click', function () { applyRoute(ROUTE_AP); });
+  document.getElementById('btn-moto').addEventListener('click', function () { applyRoute(ROUTE_MOTO); });
+  document.getElementById('btn-reset').addEventListener('click', function () {
+    selected = []; activeRoute = null;
+    document.getElementById('builder-hint').textContent = 'Click any compound to build a sequence. Locked ones tell you why.';
+    render();
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>
