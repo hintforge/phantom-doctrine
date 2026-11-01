@@ -23,8 +23,11 @@ How your AI agent fills it:
                 extractor). Leave [] only when the agent has no save row yet,
                 and say so in the Body Engineering note.
        ROUTE_AP / ROUTE_MOTO  the recommended sequence(s), from
-                `items/abilities.md`. The defaults below are the generic
-                single-step 3-AP route and the full Motoric route.
+                `items/abilities.md`. Always recompute ROUTE_AP for this
+                agent: the shortest compound sequence that takes THIS
+                agent's Motoric to 100 (3 AP), checked against the
+                compound table below. The default ['Gonadorelin'] only
+                works for the example BASE (Motoric 85); never keep it.
   4. Fill the Perks and Next Training sections from the agent's owned perks,
      talents and trainings (save ids in the extractor output; names and
      effects in `items/abilities.md`). Mark anything not read off the save or
@@ -294,7 +297,8 @@ Circulatory give the 2nd / 3rd Focus Point (`mechanics.md`).
     { id: 'Stanozolol',  circ: 0,  sens: 9,  resp: 0,  moto: 5,   requires: 'Formebolone', blocks: ['Albumin'] }
   ];
 
-  // REPLACE if this agent needs a different route (items/abilities.md).
+  // REPLACE ROUTE_AP for every agent: shortest sequence to Motoric 100 from
+  // THIS agent's BASE.moto (the default suits only the example Motoric 85).
   var ROUTE_AP = ['Gonadorelin'];
   var ROUTE_MOTO = ['AMPEA', 'Bolasterone', 'EPO', 'ARGOXY', 'Gonadorelin', 'Raloxifene',
                     'AMPK', 'FGF', 'Bolandiol', 'Cyclofenil', 'TST', 'Albumin', 'DXAMPEA',
