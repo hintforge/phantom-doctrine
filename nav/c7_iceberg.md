@@ -33,7 +33,7 @@ Ending (permanent, point-of-divergence) -- *The End?* difficulty achievements (E
 2. **Reach the server station.**
 3. **Reach the reactor** (can precede gate 2).
 4. **Disable the power** -- opens the locked forward doors.
-5. **Optional: kill the traitor** (background-dependent identity -- unconfirmed which named character this resolves to; possibly Turncoat or Undertow depending on playthrough, see `limitations.md`; 51200 XP).
+5. **Optional: kill the traitor** (background-dependent identity -- unconfirmed which named character this resolves to, see `limitations.md`; 51200 XP).
 6. **Find Valhalla.** `entity: valhalla`, `entity-status: hostile` -- see `../npcs/valhalla.md`.
 7. **Kill Valhalla and bodyguards.**
 8. **Disable the satellite** (x2).

@@ -26,7 +26,7 @@ To `c6_penthouse` (chapter continues, unconfirmed direct edge -- see below). **T
 2. **Evacuate.**
    - `point_of_no_return:` none noted
 
-`entity: turncoat`, `entity-status: hostile` -- see `../npcs/turncoat.md`. This is the character revealed as your former handler at `c2_glasgow`.
+`entity: turncoat`, `entity-status: hostile` -- see `../npcs/turncoat.md`. Background: see `c2_glasgow.md` gate 6.
 _source: deep-research P2 2026-08-18 · capture: web_fetch · confidence: medium (single-source) · enemy-tier: 1 · puzzle-tier: 0 · category: mainline · spoiler: progression_ `[Single source -- verify · class:steam-guide]`
 
 ## Common confusions

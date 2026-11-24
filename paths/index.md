@@ -15,7 +15,7 @@ Branching-narrative path files, indexed here. Phantom Doctrine's branch point is
 
 ## What P1 confirmed
 
-The divergence between agencies is **substantial in Chapter 1** (entirely different missions, protagonist, handler character, voiceover language, recruitment affinity) and **converges from Chapter 2 onward** into a shared "Cabal" storyline. The Mossad path retains one confirmed exclusive beat past Chapter 1 (an optional Chapter 3 objective) -- otherwise the three paths tell the same story from Chapter 2 on, just with a different handler-traitor character paying off the same narrative beats.
+The divergence between agencies is **substantial in Chapter 1** (entirely different missions, protagonist, handler character, voiceover language, recruitment affinity) and **converges from Chapter 2 onward** into a shared "Cabal" storyline. The Mossad path retains one confirmed exclusive beat past Chapter 1 (an optional Chapter 3 objective) -- otherwise the three paths tell the same story from Chapter 2 on, just with a different handler character paying off the same narrative beats.
 
 ## Sources
 

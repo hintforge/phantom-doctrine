@@ -48,14 +48,14 @@ _source: deep-research P1 2026-08-18 · capture: web_fetch · confidence: high �
 Two options available from campaign start (CIA "Deadpan", KGB "Kodiak"); Mossad "Hemlock" (the Israeli Nazi Hunter) unlocks only after finishing one campaign. See `paths/index.md` for the full per-agency breakdown; summary of what diverges:
 
 1. Different protagonist + entirely different Chapter 1 missions (three unique openings).
-2. A unique handler, later revealed as a brainwashed MKULTRA traitor -- see `npcs/fender.md` (CIA), `npcs/cyclone.md` (KGB), `npcs/delilah.md` (Mossad).
+2. A unique handler character -- see `npcs/fender.md` (CIA), `npcs/cyclone.md` (KGB), `npcs/delilah.md` (Mossad).
 3. Voiceover language (KGB agents speak Russian).
 4. Recruitment affinity -- KGB recruits Stasi/SB (communist-bloc agencies) more easily; CIA and Mossad recruit each other more easily.
 5. Subtle facility/upgrade unlock-timing differences and some mission variations.
 
 From Chapter 2 onward the storylines converge into "The Cabal." Per developer CFG_Hitch on Steam (verbatim): "each background provides healthy several hours of content, with the entire game estimated at 40+ hours."
 
-_source: deep-research P1 2026-08-18 · capture: web_fetch · confidence: high · enemy-tier: 0 (the choice mechanic itself) · puzzle-tier: 0 · category: mainline · spoiler: none. The handler-traitor reveal (item 2) is `spoiler: story`, enemy-tier 3 -- see the linked npcs/ files, gated separately from this mechanic-level summary._ [Confirmed: 5 sources, 1 language · class:official-pr+community-wiki]
+_source: deep-research P1 2026-08-18 · capture: web_fetch · confidence: high · enemy-tier: 0 (the choice mechanic itself) · puzzle-tier: 0 · category: mainline · spoiler: none_ [Confirmed: 5 sources, 1 language · class:official-pr+community-wiki]
 
 ## Disguises & cover/awareness
 

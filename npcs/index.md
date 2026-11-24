@@ -21,7 +21,7 @@ The corpus's roster for named individual NPCs -- who's in the story, and where t
 | omikron | Omikron | friendly | research-integrated | c2_omikron | no |
 | abaddon | Abaddon | hostile | research-integrated | mossad_c1_diplomatique | yes (Ch3 kill-objective is optional) |
 | broadsword | Broadsword | hostile | research-integrated | c5_numbers_station | person-encounter effectively missable in regular campaign (Extended-only) |
-| turncoat | Turncoat | hostile | research-integrated | c2_glasgow (reveal); c6_turncoat (combat) | no -- mandatory story beats |
+| turncoat | Turncoat | hostile | research-integrated | c6_turncoat (combat); earlier beat -- see `turncoat.md` | no -- mandatory story beats |
 | undertow | Undertow | hostile | research-integrated | hideout_hub (strategic, not a zone) | unknown -- randomized roster agent, see file |
 | lamster | Lamster | party | research-integrated | hideout_hub (joins post-c3_taipan_capture) | no |
 
