@@ -274,6 +274,10 @@ _source: WebSearch 2026-09-16 (Fandom Technology Tree, Fandom Forger page, Steam
 
 _source: live-play, player-reported 2026-09-16 · capture: manual_paste · confidence: medium (player-observed price change, but conflicts with the prior recorded price -- see discrepancy note) · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_
 
+**A new identity changes only the agent's real name.** Forging a new identity rewrites the agent's first and last name; their base stats, background, nationality and portrait stay the same. An agent who seems to have vanished from a name search has usually just been renamed, not lost.
+
+_source: save parse 2026-09-16, diff of a 2026-08-20 save against the live save, matched on each agent's save id; 2 agents renamed · capture: manual_paste · confidence: high (mapping marked confirmed in `save_schema.md`) · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_
+
 ## Early-game money -- best sources
 
 Four corroborated income moves for the early game: (1) **sell unequipped gear** -- weapons/armor/items sell for roughly 80% of purchase value, a generous rate; rule of thumb is sell anything you're holding more than 2 spares of. (2) **loot every mission**, including documents, and use trading contracts to offload unwanted loot once discovered. (3) **keep every Forger slot manned 24/7** -- this is the steadiest passive income stream (see Economy note above) and idle Forger capacity is pure lost income. (4) **craft high-margin items to resell** -- among quick personal-gear/items crafts, **Decoy tops the tier at $25.00/hr** (with the Crafting perk), edging out lockpicks and all silencer variants; the separate, longer-craft Support Items tier runs higher still, topping out at **Neurotoxin, $25.91/hr** (see tables below). Risk-management note found alongside the above: keep a reserve of roughly **$4,000** rather than spending to zero, since identity changes (Heat reset) and emergency base relocation both need cash on hand.
@@ -343,6 +347,10 @@ _source: live-play direct filesystem check 2026-08-22 (the game's Steam install 
 _source: live-play WebSearch 2026-08-20 (Steam Community: "Finding the last loot or doc on the map," "How to tell where intel/cache are?," "Can't ever seem to find all loot," "Disappearing Documents") · capture: web_fetch · confidence: medium (consistent across multiple independent forum threads, not cross-checked against an editorial source) · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_
 
 _source: live-play WebSearch 2026-08-19 · capture: web_fetch · confidence: medium (single-pass search, not exhaustive) · enemy-tier: 0 · puzzle-tier: 0 · category: meta (not in-game content) · spoiler: none_ [Confirmed: 2 sources, 1 language · class:community-wiki]
+
+**Some loot containers are empty decoys.** A map can hold containers that were never stocked: they hold nothing from the start and never count toward the mission's LOOT COLLECTED / CLASSIFIED DOCS COLLECTED tallies, so leaving one is not a missed pickup. A real container's contents also clear once it is taken, so an empty container seen later can be either a decoy or one already collected.
+
+_source: save parse 2026-09-16, tactical autosave (`pdtauto*.PDSave`) container contents field, checked against a mission HUD screenshot of the collected tallies · capture: manual_paste · confidence: high (mapping marked confirmed in `save_schema.md`) · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_
 
 ## Sources
 

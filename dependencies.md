@@ -30,9 +30,10 @@ _None met the write threshold this pass -- corpus's existing PoNR/missable conte
 
 Stitch's per-edge convergence audit (see [`stitch_and_zipper.md`](https://github.com/hintforge/builder/blob/main/stitch_and_zipper.md) Phase B) populates this section when a candidate edge's cited sources contradict each other. Each row records the contradiction; resolving it is the user's call (or a follow-up doctor / ingestion run). Edges blocked on an unresolved entry are NOT written to the tables above until the inconsistency is closed.
 
-_Both inconsistencies found this run were resolved immediately per stitch's mandatory 5b resolution step -- no open rows remain._
+_Both inconsistencies found this run were resolved immediately per stitch's mandatory 5b resolution step. A doctor pass on 2026-11-24 added the open row below._
 
 | Detected | Files | Conflicting values | Suspected authoritative source | Status |
 |----------|-------|--------------------|--------------------------------|--------|
+| 2026-11-24 (doctor) | `mechanics.md` ("Third-party modding", pause-menu paragraph and the "Why loot/docs still get missed" list), `save_schema.md` ("Tactical saves expose live loot and document positions") | `mechanics.md`: the pause menu shows per-mission loot/document counts in its top-left corner, and some players report that counter miscounts. `save_schema.md`: no in-game remaining-loot counter exists; only the save has the data. | Not picked. Settled by an in-game look at the pause menu: does it show counts left on the map, or only counts collected? | open |
 
 <!-- Status vocabulary: open (just surfaced) | resolved (user picked authoritative value + corrected the other file) | accepted (user accepted both -- rare; usually means the claim is genuinely ambiguous in-game). When status flips to resolved, the next stitch run can re-evaluate the edge. -->
