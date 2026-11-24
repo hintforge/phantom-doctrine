@@ -9,19 +9,19 @@ Mainstream English guides (LordRedStone's perk tiers, gamepressure, gamexguides)
 
 **Survivor + Actor + Faster Movement + Composure/Combat Senses.** The "unstoppable" combo per gamepressure: Actor (near-undetectable) + Survivor (survives takedowns) on recon'd missions. Best for *Pacifist* / *No One Noticed* achievements.
 
-_spoiler: none_ [Confirmed: 3 sources]
+_source: LordRedStone "The best perks" Steam guide; gamepressure.com and gamexguides.com build guides · capture: web_fetch · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_ [Confirmed: 3 sources]
 
 ## Weapon-focused (combat) build
 
 High **Circulatory** stat via Body Engineering (150 for 2 Focus Points, ~200 for 3 FP) + assault-rifle proficiency + **League Pitcher** (grenades don't end turn) + **Fearless** (immune to suppression). Endgame assault rifles are widely called overpowered.
 
-_spoiler: progression_ [Confirmed: 3 sources]
+_source: LordRedStone "The best perks" Steam guide; gamepressure.com and gamexguides.com build guides · capture: web_fetch · enemy-tier: 1 · puzzle-tier: 0 · category: mainline · spoiler: progression_ [Confirmed: 3 sources]
 
 ## Hybrid build
 
 Silenced-pistol specialist (single pistol shots have zero minimum damage -> clean infiltration kills) + Body Engineering for 4 Action Points/2 Focus Points + **Night Operations** training (Eye for Talent + M12 SMG proficiency for disguised room-sweeping).
 
-_spoiler: progression_ [Confirmed: 3 sources]
+_source: LordRedStone "The best perks" Steam guide; gamepressure.com and gamexguides.com build guides · capture: web_fetch · enemy-tier: 1 · puzzle-tier: 0 · category: mainline · spoiler: progression_ [Confirmed: 3 sources]
 
 ## Disagreement between guides
 
@@ -31,7 +31,7 @@ LordRedStone warns that treating the game like XCOM (heavy combat-perk investmen
 
 **Current position:** Survivor's flat +20 HP is not redundant, but its marginal value shrinks substantially for an agent already running that compound route. **Cite `abilities.md` "Derived-stat bonuses" for the figures; do not re-derive them here.**
 
-_spoiler: none_ [Confirmed: 2 sources]
+_source: LordRedStone "The best perks" Steam guide; gamepressure.com and gamexguides.com build guides · capture: web_fetch · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_ [Confirmed: 2 sources]
 
 ## Sources
 

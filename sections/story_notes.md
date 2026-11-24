@@ -8,15 +8,15 @@ Aggregated catalog of story beats, lore reveals, and narrative subtext -- source
 ## Chapter 2
 
 **Your handler is a Beholder sleeper.** The unique agency handler (Fender for CIA, Cyclone for KGB, Delilah for Mossad -- whichever matches the player's starting agency) is revealed as a Beholder sleeper agent who springs the Glasgow ambush, wounds Omikron, and escapes. See `../npcs/fender.md`, `../npcs/cyclone.md`, `../npcs/delilah.md`.
-_spoiler: story · enemy-tier: 3_ [Confirmed: 3 sources]
+_source: Phantom Doctrine Fandom Wiki (The Cabal, Valhalla, Cardinal, Timeline pages); Wikipedia "Phantom Doctrine" · capture: web_fetch · enemy-tier: 3 · puzzle-tier: 0 · category: mainline · spoiler: story_ [Confirmed: 3 sources]
 
 ## Chapter 7 (finale)
 
 **The background-dependent traitor is killed.** Whichever handler betrayed the player in Chapter 2 (Fender / Cyclone / Delilah) is confronted and killed during the Iceberg finale -- a payoff to the Ch2 reveal, worth 51,200 XP.
-_spoiler: story · enemy-tier: 3_ [Confirmed: 3 sources]
+_source: Phantom Doctrine Fandom Wiki (The Cabal, Valhalla, Cardinal, Timeline pages); Wikipedia "Phantom Doctrine" · capture: web_fetch · enemy-tier: 3 · puzzle-tier: 0 · category: mainline · spoiler: story_ [Confirmed: 3 sources]
 
 **Valhalla is found and killed.** The finale's climax; Valhalla's death is unavoidable (he cannot be captured or brainwashed). See `../npcs/valhalla.md`.
-_spoiler: story · enemy-tier: 3_ [Confirmed: 4 sources]
+_source: Phantom Doctrine Fandom Wiki (Valhalla, Timeline pages); Wikipedia "Phantom Doctrine"; YouTube "Valhalla's Death, KGB Ending" Let's Play · capture: web_fetch · enemy-tier: 3 · puzzle-tier: 0 · category: mainline · spoiler: story_ [Confirmed: 4 sources]
 
 ## Faction / character reveals (base-game scope, not tied to one specific mission beat)
 

@@ -15,10 +15,15 @@
 1. Omikron begins vetting your roster (strategic Hideout event, not a tactical mission).
 2. A randomly-selected agent is flagged as the mole "Undertow" through one of several strategic mole-hunt story branches: a failed polygraph, a mysterious illness/isolation event, or a drunk-spouse accusation.
 3. Selection is effectively random -- players report even brand-new or previously "loyal" agents being tagged.
+
+_source: Phantom Doctrine Fandom Wiki (The Cabal page); Steam Community discussions on Undertow and the mole-hunt; Wikipedia "Phantom Doctrine" · capture: web_fetch · enemy-tier: 1 · puzzle-tier: 0 · category: mainline · spoiler: progression_ [Confirmed: 3 sources, 1 language]
+
 4. The mole must be executed in MK-ULTRA to progress the story. (See `../dependencies.md` PON-001.)
 
+_source: Phantom Doctrine Fandom Wiki (The Cabal page); Steam Community discussions on Undertow and the mole-hunt; Wikipedia "Phantom Doctrine" · capture: web_fetch · enemy-tier: 3 · puzzle-tier: 0 · category: mainline · spoiler: story_ [Confirmed: 3 sources, 1 language]
+
 This is a **mechanic explanation, not a narrative-identity reveal** -- nothing about Undertow's fixed backstory or motive is disclosed, because there isn't one; the game reassigns the label to whichever agent gets flagged. The mole-hunt plays out entirely at the Hideout (Analytics/MK-ULTRA), never in a tactical mission map -- see `../mechanics.md` "Mole hunt (Undertow)."
-_spoiler: progression (mechanism); enemy-tier: 1 (mechanism), enemy-tier: 3 (the fact that the mole must be executed carries the same identity-concealment weight as other hidden-entity reveals, kept at entity-hidden: yes since the "who" is discovered live in-game, not spoiled here)_ [Confirmed: 3 sources, 1 language]
+_source: Phantom Doctrine Fandom Wiki (The Cabal page); Steam Community discussions on Undertow and the mole-hunt; Wikipedia "Phantom Doctrine" · capture: web_fetch · enemy-tier: 1 · puzzle-tier: 0 · category: mainline · spoiler: progression_ [Confirmed: 3 sources, 1 language]
 
 **Soft-lock warning:** Chapter 6 (where this beat typically lands) is a notorious progression-bug hotspot -- players report getting stuck if Investigation Board dossiers are unsolved or if the flagged agent happens to be in training when the mole-hunt triggers.
 
