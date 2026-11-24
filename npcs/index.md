@@ -15,9 +15,9 @@ The corpus's roster for named individual NPCs -- who's in the story, and where t
 | cardinal | Cardinal | friendly | research-integrated | unknown | no |
 | valhalla | Valhalla (Sven Galloway) | hostile | research-integrated | unknown (final: c7_iceberg) | no |
 | tai-pan | Tai-Pan | convertible | research-integrated | c3_taipan_capture | no (Ch3 mandatory; Ch8 encounter is Extended-only) |
-| fender | Fender (CIA handler) | hostile | research-integrated | cia_c1_nuclear (approx.) | no -- CIA-path only |
-| cyclone | Cyclone (KGB handler) | hostile | research-integrated | kgb_c1_gukos (approx.) | no -- KGB-path only |
-| delilah | Delilah (Mossad handler) | hostile | research-integrated | mossad_c1_chemlab (approx.) | no -- Mossad-path only |
+| fender | Fender (CIA handler) | see file | research-integrated | cia_c1_nuclear (approx.) | no -- CIA-path only |
+| cyclone | Cyclone (KGB handler) | see file | research-integrated | kgb_c1_gukos (approx.) | no -- KGB-path only |
+| delilah | Delilah (Mossad handler) | see file | research-integrated | mossad_c1_chemlab (approx.) | no -- Mossad-path only |
 | omikron | Omikron | friendly | research-integrated | c2_omikron | no |
 | abaddon | Abaddon | hostile | research-integrated | mossad_c1_diplomatique | yes (Ch3 kill-objective is optional) |
 | broadsword | Broadsword | hostile | research-integrated | c5_numbers_station | person-encounter effectively missable in regular campaign (Extended-only) |
