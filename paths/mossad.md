@@ -5,6 +5,8 @@
 
 Starting-agency branch. Protagonist codename **Hemlock** ("the Israeli Nazi Hunter"). **Unlocks only after finishing one campaign** (CIA or KGB) -- not available on a first playthrough. See `../factions/mossad.md` for the organization-level entity file; this file covers the branch-specific playthrough content.
 
+_source: LordRedStone Steam guide "Every tactical mission in the campaign" (2018-12); Phantom Doctrine Fandom Wiki (Timeline page) · capture: web_fetch · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_
+
 ## What diverges from the other two paths
 
 1. Entirely different Chapter 1 missions: chemical weapons lab, optional journalist rescue, smugglers' base (optional kill Ramses, +50 XP), intercept Komodo & Abaddon (kill Komodo; 3 optional stealth objectives, 33 XP each). Finishing = *The Institute* -- 4.81% Steam rarity, the rarest story achievement in the base list (partly because it structurally requires a prior clear first).
@@ -13,8 +15,6 @@ Starting-agency branch. Protagonist codename **Hemlock** ("the Israeli Nazi Hunt
 4. **Path-exclusive later content:** an extra optional "Kill Abaddon" objective at the Chapter 3 houseboat mission (`c3_houseboat`), flagged as main but not actually required.
 
 From Chapter 2 onward, converges with the other two paths into "The Cabal" -- the Ch3 Abaddon objective is the only confirmed Mossad-exclusive content past Chapter 1.
-
-The path-selection mechanic itself carries no spoiler (tier 0); the mission content and handler identity are story-tier.
 
 _source: LordRedStone Steam guide "Every tactical mission in the campaign" (2018-12); Phantom Doctrine Fandom Wiki (Timeline page) · capture: web_fetch · enemy-tier: 3 · puzzle-tier: 0 · category: mainline · spoiler: story_
 

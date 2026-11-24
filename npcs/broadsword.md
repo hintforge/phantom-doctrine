@@ -12,7 +12,7 @@
 
 **P1 open question RESOLVED at P2 (2026-08-18).** "Broadsword" is a dual-use name:
 
-1. **A NATO program codename** -- a Western European civil-defense modernization program, referenced as "the Broadsword facility" (destroy-the-facility achievement *Explosive Measures*).
+1. **A NATO program codename** -- a Western European civil-defense modernization program, referenced as "the Broadsword facility" (the destroy-the-facility hidden achievement -- see `../achievements.md`).
 2. **A specific person** -- a Beholder agent, physically present and killable in the Munich mission (`c5_numbers_station`) **only in its Extended (NG+) campaign variant**. In the regular campaign, the person is typically absent even though the facility/program content is still there. The kill achievement (*Death of a Citizen*) unlocks reliably only in the Extended campaign.
 
 Tai-Pan reveals at `c5_terrorcell` that Broadsword runs a Western European terror cell, ahead of the full identity confirmation at `c5_numbers_station`.
@@ -33,7 +33,7 @@ Not itemized by P2 research beyond the encounter's existence in the Extended var
 
 ## Achievements
 
-- *Explosive Measures* (HIDDEN) -- destroy the Broadsword facility. Available in both regular and Extended campaigns.
+- A hidden achievement tied to the Broadsword facility (see `../achievements.md`). Available in both regular and Extended campaigns.
 - *Death of a Citizen* -- kill Broadsword in Munich. Reliably achievable only in the Extended campaign.
 
 See `../achievements.md`.
@@ -56,7 +56,7 @@ _source: LordRedStone Steam guide "Every tactical mission in the campaign" (2018
 
 - `../nav/architecture.md` -- Chapter 5 edges and Locks and Keys (Communications Workshop upgrade required to trace the station).
 - `../nav/c5_terrorcell.md`, `../nav/c5_numbers_station.md` -- full gate lists.
-- `../achievements.md` -- *Explosive Measures*, *Death of a Citizen*.
+- `../achievements.md` -- the hidden facility achievement, *Death of a Citizen*.
 - `../limitations.md` -- previously recorded as an open research gap; now resolved, entry updated.
 
 ## Sources

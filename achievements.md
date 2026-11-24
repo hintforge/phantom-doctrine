@@ -60,8 +60,8 @@ Mutually-exclusive-path achievements -- earning one within a playthrough foreclo
 | 1 | Comrade Spy | No | 16.5 | Finish Ch1 KGB (submarine mission) | *US Intelligence*, *The Institute* (starting-agency choice is exclusive per playthrough) |
 | 2 | US Intelligence | No | 36.7 | Finish Ch1 CIA (Beirut raid) | *Comrade Spy*, *The Institute* |
 | 3 | The Institute | No | 4.8 | Finish Ch1 Mossad; Mossad unlocked only after 1 prior campaign clear | *Comrade Spy*, *US Intelligence* |
-| 15 | Same, but Different | No | 4.2 | Recover Marquis cargo from a different safehouse (Extended-only houseboat variant) | mutually exclusive with *Rock the Boat*'s regular-playthrough version within the same save |
-| 16 | Death of a Citizen | No | 4.0 | Kill Broadsword in Munich (Ch5, Extended-only variant) | mutually exclusive with regular-playthrough *Explosive Measures* path within the same save |
+| 15 | Same, but Different | No | 4.2 | Recover Marquis cargo from a different safehouse (Extended-only houseboat variant) | mutually exclusive with the regular-playthrough version of the houseboat hidden achievement (see the hidden Progression sub-table) within the same save |
+| 16 | Death of a Citizen | No | 4.0 | Kill Broadsword in Munich (Ch5, Extended-only variant) | mutually exclusive with the regular-playthrough Ch5 hidden achievement (see the hidden Progression sub-table) within the same save |
 | 17 | The Whole Truth | No | 3.6 | Finish the Extended campaign (Ch8, kill Tai-Pan) | NG+ only -- excluded entirely on a save that never unlocks/plays the Extended campaign |
 
 _source: deep-research P1 2026-08-18 · capture: web_fetch · confidence: high · category: mainline_ **(added at stitch 2026-08-18 -- #17 was present in the raw P1 research result but dropped during P1 ingestion; `nav/c8_killtaipan.md` and `npcs/tai-pan.md` already cited this achievement and pointed here, so the corpus's own Coverage Check claim of "all 47 resolved" was inaccurate until this row was restored.)**
@@ -144,6 +144,8 @@ _source: deep-research P1 2026-08-18 · capture: web_fetch · confidence: medium
 ## Verbatim spelling notes
 
 "Licence to Kill" (British spelling), "Well-equipped" (hyphen, lowercase e), "Same, but Different" (comma), "Lootcrates are Forever" (one word "Lootcrates"), "The End? - Easy/Normal/Hard" (question mark + space-hyphen-space).
+
+_source: deep-research P1 2026-08-18 · capture: web_fetch · confidence: high · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_
 
 ## Achievement-name spoiler flag
 

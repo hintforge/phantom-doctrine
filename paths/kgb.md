@@ -5,6 +5,8 @@
 
 Starting-agency branch. Protagonist codename **Kodiak.** See `../factions/kgb.md` for the organization-level entity file; this file covers the branch-specific playthrough content.
 
+_source: LordRedStone Steam guide "Every tactical mission in the campaign" (2018-12); Phantom Doctrine Fandom Wiki (Timeline page) · capture: web_fetch · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_
+
 ## What diverges from the other two paths
 
 1. Entirely different Chapter 1 missions: arrest the traitor Yukon (found dead, follow blood trail to classified documents, investigate Vladivostok police), hideout raid, submarine sabotage (3 sabotage points; interlocks force combat after 2 turns -- **do sabotage points last**). Finishing = *Comrade Spy*.
@@ -13,8 +15,6 @@ Starting-agency branch. Protagonist codename **Kodiak.** See `../factions/kgb.md
 4. Recruits Stasi/SB-aligned (communist-bloc) agents more easily than CIA/Mossad-aligned agents.
 
 From Chapter 2 onward, converges with the other two paths into "The Cabal" -- no further path-specific content confirmed by P1 research past this point.
-
-The path-selection mechanic itself carries no spoiler (tier 0); the mission content and handler identity are story-tier.
 
 _source: LordRedStone Steam guide "Every tactical mission in the campaign" (2018-12); Phantom Doctrine Fandom Wiki (Timeline page) · capture: web_fetch · enemy-tier: 3 · puzzle-tier: 0 · category: mainline · spoiler: story_
 

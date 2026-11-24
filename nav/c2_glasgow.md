@@ -38,7 +38,7 @@ To `c3_ivorycoast` via edge `(c2_glasgow, c3_ivorycoast)`. **Type:** story-gate.
    - `point_of_no_return:` missable-trigger
 7. **Evacuate.**
 
-Achievement: *Once Bitten, Twice Shy.*
+Achievement: one hidden achievement (see `achievements.md`).
 _source: deep-research P2 2026-08-18 · capture: web_fetch · confidence: high · enemy-tier: 1 · puzzle-tier: 0 · category: mainline · spoiler: progression (gates 1-5, 7); spoiler: story (gate 6 -- handler-is-Turncoat reveal, `entity: turncoat`, `entity-hidden: yes` at the moment of this reveal)_ [Confirmed: 3 sources, 2 languages]
 
 ## Common confusions

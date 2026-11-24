@@ -36,7 +36,7 @@ To `c6_turncoat` (chapter transition). **Type:** story-gate. **Point of no retur
 5. **Evacuate.**
    - `point_of_no_return:` chapter-bound
 
-Achievements: *Explosive Measures* (destroy the Broadsword facility, HIDDEN); *Death of a Citizen* (kill Broadsword in Munich, Extended only). (P2's raw research said "Extreme Measures" -- reconciled to *Explosive Measures* per P1's achievements.md, sourced from a verbatim Steam achievement-name fetch and higher authority than P2's incidental mention.)
+Achievements: one hidden achievement (see `achievements.md`); *Death of a Citizen* (kill Broadsword in Munich, Extended only). (P2's raw research gave a different name for the hidden one -- reconciled to the name in P1's achievements.md, sourced from a verbatim Steam achievement-name fetch and higher authority than P2's incidental mention.)
 _source: deep-research P2 2026-08-18 · capture: web_fetch · confidence: high · enemy-tier: 1 (gates/facility); enemy-tier: 3 (Broadsword person-identity reveal) · puzzle-tier: 0 · category: mainline · spoiler: progression (gates); spoiler: story (Broadsword identity resolution)_ [Confirmed: 3 sources, 2 languages]
 
 ## Common confusions

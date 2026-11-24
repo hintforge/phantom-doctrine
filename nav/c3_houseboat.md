@@ -32,7 +32,7 @@ Gates the Northstar lead via edge `(c3_houseboat, c4_vancouver)` once the recove
 6. **Evacuate.**
    - `point_of_no_return:` none noted
 
-Achievement (regular): *Rock the Boat* (corrected at stitch 2026-08-18 -- P2's raw source cited "Clear the Deck," which contradicted the higher-authority P1 `achievements.md` verbatim-Steam-name fetch; see `achievements.md` Progression #5).
+Achievement (regular): one hidden achievement (name corrected at stitch 2026-08-18 -- P2's raw source gave a different name, which contradicted the higher-authority P1 `achievements.md` verbatim-Steam-name fetch; see `achievements.md` Progression hidden sub-table #5).
 
 ## Optional branches / shortcuts
 

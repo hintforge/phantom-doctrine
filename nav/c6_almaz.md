@@ -18,7 +18,7 @@ To `c7_searstower` via edge `(c6_almaz, c7_searstower)`. **Type:** story-gate. *
 
 ## Outgoing edges
 
-- `(c6_almaz, c7_searstower)` -- story-gate, one-way, requires finishing Ch6 (*Tip of the Iceberg*, regular playthrough only).
+- `(c6_almaz, c7_searstower)` -- story-gate, one-way, requires finishing Ch6 (a hidden achievement, regular playthrough only -- see `achievements.md`).
 
 ## Sequential gates (regular variant)
 
@@ -29,7 +29,7 @@ To `c7_searstower` via edge `(c6_almaz, c7_searstower)`. **Type:** story-gate. *
 5. **Evacuate.**
    - `point_of_no_return:` chapter-bound
 
-Achievement: *Tip of the Iceberg* (HIDDEN, regular playthrough only).
+Achievement: one hidden achievement (regular playthrough only; see `achievements.md`).
 
 ## Optional branches / shortcuts
 

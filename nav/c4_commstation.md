@@ -23,7 +23,7 @@ To `c5_siliconvalley` per Chapter 5's opening ambush. **Type:** story-gate. **Po
 ## Entry tips (3 max)
 
 1. **This mission cannot be "won" in the usual sense** -- the plane (KAL-007) is shot down regardless of play. This is scripted.
-2. The achievement ("Dead Zone" / *Communication Noise*) still fires even though the plane is lost -- don't assume a failed run.
+2. The hidden achievement here (see `achievements.md`) still fires even though the plane is lost -- don't assume a failed run.
 3. One locked door on this map (roof) cannot be lockpicked at all -- it's a dead end, not a bug.
 
 ## Sequential gates
@@ -35,7 +35,7 @@ To `c5_siliconvalley` per Chapter 5's opening ambush. **Type:** story-gate. **Po
 5. **Evacuate.**
    - `point_of_no_return:` point-of-divergence
 
-Achievement: *Communication Noise* / "Dead Zone" (HIDDEN) -- "attempt to save 269 lives."
+Achievement: one hidden achievement (see `achievements.md`).
 _source: deep-research P2 2026-08-18 · capture: web_fetch · confidence: high · enemy-tier: 1 · puzzle-tier: 0 · category: mainline · spoiler: progression (gates); spoiler: story (the scripted-outcome twist itself)_ [Confirmed: 2 sources, 1 language]
 
 ## Common confusions

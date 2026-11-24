@@ -38,11 +38,22 @@ Sources I found that look useful but couldn't fully fetch -- paywalls, Cloudflar
 - Originally blocked at Stage 0: https://tvtropes.org/pmwiki/pmwiki.php/VideoGame/PhantomDoctrine (HTTP 403).
 - P1's source list cites "TV Tropes, VideoGame/PhantomDoctrine" directly (starting cash, handlers, support roles, brainwashing) -- the main page fetched successfully. Whether a dedicated character-breakdown sub-page exists and was separately blocked was not distinguished in the P1 result.
 
+_source: Stage 0 fetch attempts and deep-research P1 2026-08-17/18 (blocked-source record) · capture: derived · confidence: high · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_
+
 ## Resolved at P2 (2026-08-18)
 
 - **"Broadsword" identity -- RESOLVED.** Both a NATO civil-defense program codename AND a specific person (a Beholder agent, present and killable only in the Extended/NG+ variant of `c5_numbers_station`). See `npcs/broadsword.md`.
+
+_source: LordRedStone Steam guide; Phantom Doctrine Fandom wiki Broadsword page; Steam Community discussions via deep-research P2 2026-08-18 (see `npcs/broadsword.md`) · capture: web_fetch · enemy-tier: 3 · puzzle-tier: 0 · category: mainline · spoiler: story_ [Confirmed: 3 sources, 2 languages]
+
 - **Undertow's discovery mechanism -- RESOLVED.** Not a fixed character -- a randomly-selected existing roster agent, flagged via strategic Hideout mole-hunt events (polygraph fail, illness/isolation, drunk-spouse accusation), executed in MK-ULTRA. Plays out entirely at the Hideout, not a tactical mission. See `npcs/undertow.md` and `mechanics.md` "Mole hunt (Undertow)".
+
+_source: deep-research P2 2026-08-18 (see `npcs/undertow.md`) · capture: web_fetch · enemy-tier: 3 · puzzle-tier: 0 · category: mainline · spoiler: story_ [Confirmed: 3 sources, 1 language]
+
 - **Locks-and-keys table -- RESOLVED (P2 primary deliverable).** Minimal traditional item-keyed gating -- one true in-mission item key (Glasgow); real "keys" are story-flag gates (solved dossiers, Workshop tech). Full table in `nav/architecture.md` Locks and Keys.
+
+_source: deep-research P2 2026-08-18 (see `nav/architecture.md` Locks and Keys) · capture: web_fetch · confidence: high · enemy-tier: 1 · puzzle-tier: 0 · category: mainline · spoiler: progression_ [Confirmed: 3 sources, 2 languages]
+
 - **"Turncoat" characterization -- SUBSTANTIALLY RESOLVED.** Turncoat is the Cabal's name for whichever starting-agency handler (Fender/Cyclone/Delilah) is revealed as a Beholder sleeper agent at `c2_glasgow`; hostile encounter at `c6_turncoat`. See `npcs/turncoat.md`. Remaining gap: no personal motive/backstory beyond the handler role surfaced.
 
 _source: LordRedStone Steam guide + gamepressure.com Ch.2/Ch.6 walkthroughs via deep-research P2 2026-08-18 (see `npcs/turncoat.md`) · capture: web_fetch · confidence: high · enemy-tier: 3 · puzzle-tier: 0 · category: mainline · spoiler: story_ [Confirmed: 3 sources, 2 languages]
