@@ -145,7 +145,8 @@ Re-verify the divisor on a second map before trusting it blindly. Check:
 candidate (calibrated inside one save, not against the game screen).
 
 **Read your own agents' positions** from `<tchar Side="HumanPlayer">` to convert
-a container tile into a direction to walk.
+a container tile into a direction to walk. Check: candidate (the `HumanPlayer` side read from the save
+as the player's units; not checked against the game screen).
 
 This section comes from a live-play save parse on 2026-08-22
 (`pdtauto0.PDSave`, map `L093_ESCI_soviet_blocks`), captured by manual paste.
