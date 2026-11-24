@@ -13,7 +13,7 @@
 ## Current status
 
 Valhalla's right-hand woman within the Beholder Initiative AND, secretly, an undercover CIA mole feeding intelligence to the Cabal. She assassinated the previous Beholder Initiative CEO to install Valhalla in that role. Her dual loyalty doesn't map cleanly to a single hostile/friendly label -- she operates inside the antagonist organization while working against it from within.
-_spoiler: story · enemy-tier: 3_
+_source: Phantom Doctrine Fandom Wiki (Cardinal, Timeline pages); Wikipedia "Phantom Doctrine" · capture: web_fetch · enemy-tier: 3 · puzzle-tier: 0 · category: mainline · spoiler: story_
 
 ## Recruitment / Access
 
@@ -43,6 +43,8 @@ Not applicable -- no missable content tied specifically to Cardinal beyond the B
 
 - **Pre-reveal:** presented as Valhalla's second-in-command within the Beholder Initiative.
 - **Reveal (late-game, story-tier):** confirmed as an undercover CIA mole who assassinated the prior Beholder CEO to install Valhalla, and who has been feeding the Cabal intelligence.
+
+_source: Phantom Doctrine Fandom Wiki (Cardinal, Timeline pages); Wikipedia "Phantom Doctrine" · capture: web_fetch · enemy-tier: 3 · puzzle-tier: 0 · category: mainline · spoiler: story_
 
 ## See also
 

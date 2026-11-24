@@ -11,7 +11,7 @@
 ## Current status
 
 The antagonist organization. A US lobbying firm founded 1955 to perpetuate global conflict, led by Valhalla (Sven Galloway). Its master plan is **Project Iceberg** -- decrypting/altering global communications in real time for societal control, ended when the player crashes the Almaz Control Station to Earth in Chapter 6-7.
-_spoiler: story (founding history, Project Iceberg detail) · progression (org existence, referenced from Ch2 onward) · enemy-tier: 1/3 depending on fact_
+_source: Phantom Doctrine Fandom Wiki (Valhalla, The Cabal, Timeline pages); Wikipedia "Phantom Doctrine" · capture: web_fetch · enemy-tier: 3 · puzzle-tier: 0 · category: mainline · spoiler: story_
 
 ## Recruitment / Access
 
@@ -36,6 +36,8 @@ Fielded via its individual named agents (Valhalla, the sleeper handlers, Underto
 ## Missability
 
 Not applicable.
+
+_source: Phantom Doctrine Fandom Wiki (Valhalla, The Cabal, Timeline pages); Wikipedia "Phantom Doctrine" · capture: web_fetch · enemy-tier: 3 · puzzle-tier: 0 · category: mainline · spoiler: story_
 
 ## See also
 

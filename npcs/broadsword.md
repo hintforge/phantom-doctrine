@@ -16,7 +16,7 @@
 2. **A specific person** -- a Beholder agent, physically present and killable in the Munich mission (`c5_numbers_station`) **only in its Extended (NG+) campaign variant**. In the regular campaign, the person is typically absent even though the facility/program content is still there. The kill achievement (*Death of a Citizen*) unlocks reliably only in the Extended campaign.
 
 Tai-Pan reveals at `c5_terrorcell` that Broadsword runs a Western European terror cell, ahead of the full identity confirmation at `c5_numbers_station`.
-_spoiler: story · enemy-tier: 3_ [Confirmed: 3 sources, 2 languages]
+_source: LordRedStone Steam guide "Every tactical mission in the campaign" (2018-12); Phantom Doctrine Fandom wiki Broadsword page; Steam Community discussions on Broadsword's identity · capture: web_fetch · enemy-tier: 3 · puzzle-tier: 0 · category: mainline · spoiler: story_ [Confirmed: 3 sources, 2 languages]
 
 ## Recruitment / Access
 
@@ -49,6 +49,8 @@ The person-encounter is effectively missable in the regular campaign (he's typic
 ## Status history
 
 Not applicable -- no relationship-state changes; Broadsword is a stable hostile entity once encountered.
+
+_source: LordRedStone Steam guide "Every tactical mission in the campaign" (2018-12); Phantom Doctrine Fandom wiki Broadsword page; Steam Community discussions on Broadsword's identity · capture: web_fetch · enemy-tier: 3 · puzzle-tier: 0 · category: mainline · spoiler: story_
 
 ## See also
 

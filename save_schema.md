@@ -1,5 +1,7 @@
 # Phantom Doctrine save-file schema -- field semantics for safe extraction
 
+**status:** live-observed
+
 Authoritative reference for reading `.PDSave` data. Written 2026-08-21 after two
 save-read failures reached the player: base stats reported as live stats (wrong
 hire recommendation, 2026-08-20) and a hidden-identity flag volunteered at

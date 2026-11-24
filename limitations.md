@@ -1,5 +1,7 @@
 # Phantom Doctrine -- Limitations & Blocked Sources
 
+**status:** research-integrated
+
 Sources I found that look useful but couldn't fully fetch -- paywalls, Cloudflare, age gates, video-only content, etc. URLs preserved so the player (or another contributor) can open them in a real browser.
 
 ## How to read this file
@@ -43,10 +45,17 @@ Sources I found that look useful but couldn't fully fetch -- paywalls, Cloudflar
 - **Locks-and-keys table -- RESOLVED (P2 primary deliverable).** Minimal traditional item-keyed gating -- one true in-mission item key (Glasgow); real "keys" are story-flag gates (solved dossiers, Workshop tech). Full table in `nav/architecture.md` Locks and Keys.
 - **"Turncoat" characterization -- SUBSTANTIALLY RESOLVED.** Turncoat is the Cabal's name for whichever starting-agency handler (Fender/Cyclone/Delilah) is revealed as a Beholder sleeper agent at `c2_glasgow`; hostile encounter at `c6_turncoat`. See `npcs/turncoat.md`. Remaining gap: no personal motive/backstory beyond the handler role surfaced.
 
+_source: LordRedStone Steam guide + gamepressure.com Ch.2/Ch.6 walkthroughs via deep-research P2 2026-08-18 (see `npcs/turncoat.md`) · capture: web_fetch · confidence: high · enemy-tier: 3 · puzzle-tier: 0 · category: mainline · spoiler: story_ [Confirmed: 3 sources, 2 languages]
+
 ## Open research gaps (P2 could not resolve)
 
 - **Misplaced Trust achievement's exact trigger** -- still unconfirmed. The `c2_glasgow` handler-betrayal reveal (Turncoat) is a plausible fit ("witness an agent betrayal during a tactical mission") but P2 research did not explicitly name it as this achievement's trigger -- don't present as confirmed. See `achievements.md`.
+
+_source: deep-research P2 2026-08-18 research-gap record (see `npcs/turncoat.md`, `achievements.md` Discovery) · capture: derived · confidence: low · enemy-tier: 3 · puzzle-tier: 0 · category: mainline · spoiler: story_
+
 - **`c7_iceberg`'s "the traitor"** -- the finale's optional kill-the-traitor objective (51,200 XP) is described as "background-dependent" but no name is confirmed; possibly resolves to Turncoat or Undertow depending on playthrough. Needs P3 research or a direct game-file check.
+
+_source: deep-research P2 2026-08-18 research-gap record (see `nav/c7_iceberg.md`) · capture: derived · confidence: low · enemy-tier: 3 · puzzle-tier: 0 · category: mainline · spoiler: story_
 - **Wizard** (rescued at `c3_mkultra_plans`) -- P2 research did not confirm a recurring post-rescue role. Not promoted to an `npcs/` entity file; flag if a future pass surfaces a recurring role (parallel to Omikron/Lamster).
 - **Evelyn Pococke** (`c6_penthouse` observation target) -- single-line mention, no further characterization; deliberately kept generic per the corpus's named-individual rule, not an entity file.
 - **"Make Items Available" button (Loadout/mission-launch screen)** -- live-play flag, 2026-08-20. A red button next to "Remove All Agents" / "Remove All Support" on the pre-mission squad Loadout screen; clicking it triggers an ambush-related warning/confirmation. Effect and actual consequence (if any) not documented anywhere found -- checked trade contract/vendor mechanics, mission-prep warning-icon guides, the Fandom wiki, and multiple Steam Community threads, no match. **Context pinned 2026-08-21 (from a screenshot):** it sits top-right of the LOADOUT screen as the third button in the bulk-action group `REMOVE ALL AGENTS / REMOVE ALL SUPPORT / MAKE ITEMS AVAILABLE`, which suggests a bulk gear-pooling action (make equipped items available to other agents) -- consistent with the ambush warning firing because it would strip the squad. Still unconfirmed; needs a direct in-game test.

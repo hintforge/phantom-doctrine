@@ -14,7 +14,9 @@ Starting-agency branch. Protagonist codename **Kodiak.** See `../factions/kgb.md
 
 From Chapter 2 onward, converges with the other two paths into "The Cabal" -- no further path-specific content confirmed by P1 research past this point.
 
-_spoiler: story (mission content, handler identity) · progression (path-selection mechanic itself is spoiler: none) · enemy-tier: 3 for the reveal, 0 for the selection mechanic_
+The path-selection mechanic itself carries no spoiler (tier 0); the mission content and handler identity are story-tier.
+
+_source: LordRedStone Steam guide "Every tactical mission in the campaign" (2018-12); Phantom Doctrine Fandom Wiki (Timeline page) · capture: web_fetch · enemy-tier: 3 · puzzle-tier: 0 · category: mainline · spoiler: story_
 
 ## Sources
 

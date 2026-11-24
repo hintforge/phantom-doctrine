@@ -14,7 +14,9 @@ Starting-agency branch. Protagonist codename **Hemlock** ("the Israeli Nazi Hunt
 
 From Chapter 2 onward, converges with the other two paths into "The Cabal" -- the Ch3 Abaddon objective is the only confirmed Mossad-exclusive content past Chapter 1.
 
-_spoiler: story (mission content, handler identity) · progression (path-selection mechanic itself is spoiler: none) · enemy-tier: 3 for the reveal, 0 for the selection mechanic_
+The path-selection mechanic itself carries no spoiler (tier 0); the mission content and handler identity are story-tier.
+
+_source: LordRedStone Steam guide "Every tactical mission in the campaign" (2018-12); Phantom Doctrine Fandom Wiki (Timeline page) · capture: web_fetch · enemy-tier: 3 · puzzle-tier: 0 · category: mainline · spoiler: story_
 
 ## Sources
 

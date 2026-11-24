@@ -25,10 +25,6 @@ Default-path achievements every player earns by advancing normally.
 
 | # | Name | Hidden | Rarity% | Trigger | PoNR / prereq |
 |---|---|---|---|---|---|
-| 4 | Once Bitten, Twice Shy | **Yes** | 32.9 | Escape the Glasgow trap (Ch2, `c2_glasgow`) | chapter-bound |
-| 5 | Rock the Boat | **Yes** | 20.9 | Recover Marquis cargo (Ch3 houseboat, `c3_houseboat`) | chapter-bound |
-| 6 | Communication Noise | **Yes** | 18.8 | Reach the comm-station save-attempt (Ch4, `c4_commstation`); scripted-fail still counts | chapter-bound |
-| 7 | Explosive Measures | **Yes** | 17.3 | Destroy the Broadsword facility (Ch5, `c5_numbers_station`) | chapter-bound |
 | 9 | The End? - Easy | No | 15.2 | Beat the final operation on Easy (a Hard clear unlocks all three) | -- |
 | 10 | The End? - Normal | No | 8.8 | Beat the finale on Normal | -- |
 | 12 | No One Noticed | No | 7.0 | Capture Tai-Pan (Ch3, `c3_taipan_capture`) without raising alarm | missable -- classified `mastery`, see below (execution-skill achievement, listed here for narrative reference only) |
@@ -42,6 +38,19 @@ Default-path achievements every player earns by advancing normally.
 
 _source: deep-research P1 2026-08-18 · capture: web_fetch · confidence: high · category: mainline_
 
+### Progression -- hidden achievements (names gated)
+
+Hidden achievements whose names reveal mid/late mission beats. Same columns and order as the table above.
+
+| # | Name | Hidden | Rarity% | Trigger | PoNR / prereq |
+|---|---|---|---|---|---|
+| 4 | Once Bitten, Twice Shy | **Yes** | 32.9 | Escape the Glasgow trap (Ch2, `c2_glasgow`) | chapter-bound |
+| 5 | Rock the Boat | **Yes** | 20.9 | Recover Marquis cargo (Ch3 houseboat, `c3_houseboat`) | chapter-bound |
+| 6 | Communication Noise | **Yes** | 18.8 | Reach the comm-station save-attempt (Ch4, `c4_commstation`); scripted-fail still counts | chapter-bound |
+| 7 | Explosive Measures | **Yes** | 17.3 | Destroy the Broadsword facility (Ch5, `c5_numbers_station`) | chapter-bound |
+
+_source: deep-research P1 2026-08-18 · capture: web_fetch · confidence: high · enemy-tier: 2 · puzzle-tier: 0 · category: mainline · spoiler: late-game_
+
 ## Branch
 
 Mutually-exclusive-path achievements -- earning one within a playthrough forecloses an alternative.
@@ -51,12 +60,21 @@ Mutually-exclusive-path achievements -- earning one within a playthrough foreclo
 | 1 | Comrade Spy | No | 16.5 | Finish Ch1 KGB (submarine mission) | *US Intelligence*, *The Institute* (starting-agency choice is exclusive per playthrough) |
 | 2 | US Intelligence | No | 36.7 | Finish Ch1 CIA (Beirut raid) | *Comrade Spy*, *The Institute* |
 | 3 | The Institute | No | 4.8 | Finish Ch1 Mossad; Mossad unlocked only after 1 prior campaign clear | *Comrade Spy*, *US Intelligence* |
-| 8 | Tip of the Iceberg | **Yes** | 16.1 | Finish Ch6 Almaz on a **regular** (non-Extended) playthrough | excluded entirely on Extended-campaign saves |
 | 15 | Same, but Different | No | 4.2 | Recover Marquis cargo from a different safehouse (Extended-only houseboat variant) | mutually exclusive with *Rock the Boat*'s regular-playthrough version within the same save |
 | 16 | Death of a Citizen | No | 4.0 | Kill Broadsword in Munich (Ch5, Extended-only variant) | mutually exclusive with regular-playthrough *Explosive Measures* path within the same save |
 | 17 | The Whole Truth | No | 3.6 | Finish the Extended campaign (Ch8, kill Tai-Pan) | NG+ only -- excluded entirely on a save that never unlocks/plays the Extended campaign |
 
 _source: deep-research P1 2026-08-18 · capture: web_fetch · confidence: high · category: mainline_ **(added at stitch 2026-08-18 -- #17 was present in the raw P1 research result but dropped during P1 ingestion; `nav/c8_killtaipan.md` and `npcs/tai-pan.md` already cited this achievement and pointed here, so the corpus's own Coverage Check claim of "all 47 resolved" was inaccurate until this row was restored.)**
+
+### Branch -- hidden achievements (names gated)
+
+Hidden achievement whose name reveals a late mission beat. Same columns as the table above.
+
+| # | Name | Hidden | Rarity% | Trigger | branch-excludes |
+|---|---|---|---|---|---|
+| 8 | Tip of the Iceberg | **Yes** | 16.1 | Finish Ch6 Almaz on a **regular** (non-Extended) playthrough | excluded entirely on Extended-campaign saves |
+
+_source: deep-research P1 2026-08-18 · capture: web_fetch · confidence: high · enemy-tier: 2 · puzzle-tier: 0 · category: mainline · spoiler: late-game_
 
 ## Mastery
 
@@ -125,11 +143,13 @@ _source: deep-research P1 2026-08-18 · capture: web_fetch · confidence: medium
 
 ## Verbatim spelling notes
 
-"Once Bitten, Twice Shy" (comma), "Licence to Kill" (British spelling), "Well-equipped" (hyphen, lowercase e), "Same, but Different" (comma), "Lootcrates are Forever" (one word "Lootcrates"), "The End? - Easy/Normal/Hard" (question mark + space-hyphen-space).
+"Licence to Kill" (British spelling), "Well-equipped" (hyphen, lowercase e), "Same, but Different" (comma), "Lootcrates are Forever" (one word "Lootcrates"), "The End? - Easy/Normal/Hard" (question mark + space-hyphen-space).
 
 ## Achievement-name spoiler flag
 
-The 5 hidden entries (Once Bitten, Twice Shy / Rock the Boat / Communication Noise / Explosive Measures / Tip of the Iceberg) reveal mid/late mission beats by name alone -- treat the **names themselves** as `spoiler: late-game`, gated below enemy-tier 2, in addition to their trigger content.
+The 5 hidden entries (Once Bitten, Twice Shy / Rock the Boat / Communication Noise / Explosive Measures / Tip of the Iceberg) reveal mid/late mission beats by name alone -- treat the **names themselves** as `spoiler: late-game`, gated below enemy-tier 2, in addition to their trigger content. Verbatim spelling: "Once Bitten, Twice Shy" (comma).
+
+_source: deep-research P1 2026-08-18 · capture: web_fetch · confidence: high · enemy-tier: 2 · puzzle-tier: 0 · category: mainline · spoiler: late-game_
 
 ## Sources
 

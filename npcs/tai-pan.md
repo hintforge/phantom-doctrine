@@ -11,7 +11,7 @@
 ## Current status
 
 A minor Triad villain. Captured and brainwashed in Chapter 3. In the Extended campaign's sequel hook, he seizes Beholder remnants after the base campaign ends -- resolved in Chapter 8 (`c8_killtaipan`, Extended/NG+ only), where the player kills him.
-_spoiler: story (identity/role) · progression (Ch3 capture existence) · late-game (Ch8 postgame fate) · enemy-tier: 1-3 depending on which fact -- see per-section tags below_
+_source: LordRedStone Steam guide "Every tactical mission in the campaign" (2018-12); Phantom Doctrine Fandom Wiki (Timeline page) · capture: web_fetch · enemy-tier: 3 · puzzle-tier: 0 · category: mainline · spoiler: story_
 
 ## Recruitment / Access
 
@@ -25,7 +25,7 @@ Not researched at P1 -- no perk/ability profile for a captured/brainwashed Tai-P
 
 - **Chapter 3, `c3_taipan_capture`:** "Capture Tai-Pan to brainwash him" -- his corner position is static, so this mission is commonly planned last among Ch3's missions for maximum prep. Achievement: *No One Noticed* (capture without alarm).
 - **Chapter 8, `c8_killtaipan`** (Extended/NG+ only): "Kill Tai-Pan" on the same map, reused and revisited. Achievement: *The Whole Truth*. A documented player report describes completing this mission silently using a leftover Control Phrase on Tai-Pan, despite the game's "go loud" narrative pressure.
-_spoiler: late-game · enemy-tier: 2_
+_source: LordRedStone Steam guide "Every tactical mission in the campaign" (2018-12); Phantom Doctrine Fandom Wiki (Timeline page) · capture: web_fetch · enemy-tier: 2 · puzzle-tier: 0 · category: mainline · spoiler: late-game_
 
 ## Achievements
 
@@ -45,6 +45,8 @@ The Chapter 3 capture is mandatory for story progression (gates entry to Chapter
 - **Chapter 3:** hostile (Triad villain) -> captured/brainwashed via mission completion.
 - **Post-brainwash:** no longer an active combat threat during the base campaign.
 - **Extended campaign (Chapter 8):** seizes Beholder remnants and returns as a hostile final encounter.
+
+_source: LordRedStone Steam guide "Every tactical mission in the campaign" (2018-12); Phantom Doctrine Fandom Wiki (Timeline page) · capture: web_fetch · enemy-tier: 2 · puzzle-tier: 0 · category: mainline · spoiler: late-game_
 
 ## See also
 

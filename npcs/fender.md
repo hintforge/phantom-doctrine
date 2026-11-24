@@ -13,7 +13,7 @@
 ## Current status
 
 The CIA player-path's unique handler. Revealed in Chapter 2 as a Beholder sleeper agent -- later confirmed as a brainwashed MKULTRA traitor -- who springs the Glasgow ambush (`c2_glasgow`), wounds Omikron, and escapes. Confronted and killed during the Chapter 7 finale (background-dependent traitor kill, 51,200 XP).
-_spoiler: story · enemy-tier: 3_
+_source: Phantom Doctrine Fandom Wiki (Timeline page); TV Tropes VideoGame/PhantomDoctrine · capture: web_fetch · enemy-tier: 3 · puzzle-tier: 0 · category: mainline · spoiler: story_
 
 ## Recruitment / Access
 
@@ -35,7 +35,7 @@ Not directly name-bound to a specific achievement in the P1 list; the *Misplaced
 ## Combat
 
 Final confrontation happens at the Chapter 7 finale alongside the Valhalla fight. No phase/weakness detail surfaced at P1.
-_spoiler: story · enemy-tier: 3_
+_source: Phantom Doctrine Fandom Wiki (Timeline page); TV Tropes VideoGame/PhantomDoctrine · capture: web_fetch · enemy-tier: 3 · puzzle-tier: 0 · category: mainline · spoiler: story_
 
 ## Missability
 
@@ -46,6 +46,8 @@ Not missable -- the Ch2 reveal and Ch7 confrontation are both mandatory story be
 - **Chapter 1-2 (pre-reveal):** presented as a trusted CIA-path handler.
 - **Chapter 2 reveal:** exposed as a Beholder sleeper agent (brainwashed MKULTRA traitor); springs the Glasgow ambush.
 - **Chapter 7:** killed during the finale.
+
+_source: Phantom Doctrine Fandom Wiki (Timeline page); TV Tropes VideoGame/PhantomDoctrine · capture: web_fetch · enemy-tier: 3 · puzzle-tier: 0 · category: mainline · spoiler: story_
 
 ## See also
 

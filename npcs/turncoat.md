@@ -13,7 +13,7 @@
 **P1 open question substantially resolved at P2 (2026-08-18).** "Turncoat" is the Cabal's own name for whichever starting-agency handler (Fender/CIA, Cyclone/KGB, or Delilah/Mossad -- mutually exclusive per playthrough, see `fender.md`/`cyclone.md`/`delilah.md`) is revealed as a Beholder-brainwashed sleeper agent at the `c2_glasgow` trap: the handler springs the ambush and goes rogue once the stolen cargo turns out to be fake. This confirms P1's mechanics-level note that the player's handler is "later revealed as a brainwashed MKULTRA traitor" -- P2 pins the exact reveal moment (`c2_glasgow`) and the resulting hostile-encounter zone (`c6_turncoat`, "Assault Turncoat's hideout").
 
 **Remaining open gap:** P2 did not surface further characterization (personal motive, backstory beyond the handler role, or confirmed post-encounter fate) -- see `../limitations.md`.
-_spoiler: story · enemy-tier: 3_ [Confirmed: 3 sources, 2 languages]
+_source: LordRedStone Steam guide "Every tactical mission in the campaign" (2018-12); gamepressure.com Ch.2/Ch.6 walkthroughs (2018) · capture: web_fetch · enemy-tier: 3 · puzzle-tier: 0 · category: mainline · spoiler: story_ [Confirmed: 3 sources, 2 languages]
 
 ## Recruitment / Access
 
@@ -44,6 +44,8 @@ Not confirmed -- both `c2_glasgow` and `c6_turncoat` appear to be mandatory stor
 
 - **Ch2 (`c2_glasgow`):** revealed as a Beholder-brainwashed sleeper agent; goes rogue, status shifts from `friendly` (handler) to `hostile`.
 - **Ch6 (`c6_turncoat`):** hostile encounter at their hideout.
+
+_source: LordRedStone Steam guide "Every tactical mission in the campaign" (2018-12); gamepressure.com Ch.2/Ch.6 walkthroughs (2018) · capture: web_fetch · enemy-tier: 3 · puzzle-tier: 0 · category: mainline · spoiler: story_
 
 ## See also
 

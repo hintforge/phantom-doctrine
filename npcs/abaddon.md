@@ -12,7 +12,7 @@
 ## Current status
 
 First appears as an interception target in the Mossad Chapter-1 mission alongside Komodo (`mossad_c1_diplomatique`) -- only Komodo is confirmed killed there, Abaddon's Ch1 fate is not confirmed by P1 research. Recurs at the Chapter 3 houseboat mission (`c3_houseboat`), where the Mossad path gets an extra "Kill Abaddon" objective flagged as main but **not actually required** to complete the mission.
-_spoiler: progression (existence) · enemy-tier: 1_ [Confirmed: 3 sources]
+_source: LordRedStone, "Every tactical mission in the campaign," Steam Community guide (datamining, 2018-12) · capture: web_fetch · enemy-tier: 1 · puzzle-tier: 0 · category: mainline · spoiler: progression_ [Confirmed: 3 sources]
 
 ## Recruitment / Access
 
@@ -42,6 +42,8 @@ The Ch3 "Kill Abaddon" objective is optional/skippable -- see `../sections/missa
 ## Status history
 
 Not researched at P1 -- unclear whether Abaddon's Ch1 encounter has a fixed outcome (captured, escaped, killed) carrying into Ch3, or whether the Ch3 appearance is a narratively-fresh encounter.
+
+_source: LordRedStone, "Every tactical mission in the campaign," Steam Community guide (datamining, 2018-12) · capture: web_fetch · enemy-tier: 1 · puzzle-tier: 0 · category: mainline · spoiler: progression_
 
 ## See also
 

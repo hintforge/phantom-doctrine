@@ -11,7 +11,7 @@
 ## Current status
 
 **New entity, first surfaced at P2 (2026-08-18) -- P1 did not know this character existed.** Lamster joins the player's roster at the Hideout as a story beat after the Tai-Pan arc (`c3_taipan_capture`) concludes. Independently corroborated by the locks-and-keys research: a "Lamster -> Beholder cell" dossier chain is one of the story-flag keys that unlocks a later World Map mission (see `../nav/architecture.md` Locks and Keys), consistent with Lamster functioning as a recurring intel-giver/objective-source at the Hideout, parallel to Omikron's role after `c2_glasgow`.
-_spoiler: story · enemy-tier: 3_ [Confirmed: 2 sources, 1 language]
+_source: Phantom Doctrine Fandom wiki Hideout page; gamepressure.com Ch.3 walkthrough (2018) · capture: web_fetch · enemy-tier: 3 · puzzle-tier: 0 · category: mainline · spoiler: story_ [Confirmed: 2 sources, 1 language]
 
 ## Recruitment / Access
 
@@ -36,6 +36,8 @@ Not researched -- unconfirmed whether failing to complete the Tai-Pan arc in a p
 ## Status history
 
 - **Post-`c3_taipan_capture`:** joins the roster at `hideout_hub`.
+
+_source: Phantom Doctrine Fandom wiki Hideout page; gamepressure.com Ch.3 walkthrough (2018) · capture: web_fetch · enemy-tier: 3 · puzzle-tier: 0 · category: mainline · spoiler: story_
 
 ## See also
 

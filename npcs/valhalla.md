@@ -11,7 +11,7 @@
 ## Current status
 
 Main antagonist. Real identity: **Sven Galloway**, CEO of the **Beholder Initiative** (a US lobbying firm founded 1955 to perpetuate global conflict). Killed in the finale's Grenada bunker raid -- his death is unavoidable; he cannot be captured or brainwashed.
-_spoiler: story · enemy-tier: 3_ [Confirmed: 4 sources]
+_source: Phantom Doctrine Fandom Wiki (Valhalla, Timeline pages); Wikipedia "Phantom Doctrine"; YouTube "Valhalla's Death, KGB Ending" Let's Play · capture: web_fetch · enemy-tier: 3 · puzzle-tier: 0 · category: mainline · spoiler: story_ [Confirmed: 4 sources]
 
 ## Recruitment / Access
 
@@ -32,7 +32,9 @@ Tied to *The End? - Easy/Normal/Hard* (finale-completion achievements; see `../a
 ## Combat
 
 **Final-boss fight.** No phase-by-phase mechanics or weakness detail surfaced at P1 -- deferred to P2/P3 or live-play. What P1 confirmed: the encounter is unavoidable and ends with Valhalla's death (no capture/brainwash option).
-_spoiler: story · enemy-tier: 3 (persona enforces "boss existence hidden" at enemy-tier 0 per `../warning_tiers.md` Tier 0, regardless of this file's content)_
+The persona enforces "boss existence hidden" at enemy-tier 0 per `../warning_tiers.md` Tier 0, regardless of this file's content.
+
+_source: Phantom Doctrine Fandom Wiki (Valhalla, Timeline pages); Wikipedia "Phantom Doctrine"; YouTube "Valhalla's Death, KGB Ending" Let's Play · capture: web_fetch · enemy-tier: 3 · puzzle-tier: 0 · category: mainline · spoiler: story_
 
 ## Missability
 
@@ -41,6 +43,8 @@ Not missable -- the finale confrontation is mandatory to complete the base campa
 ## Status history
 
 Not applicable -- Valhalla's status is stable (hostile) throughout; his true identity (Sven Galloway, Beholder CEO) is a narrative reveal, not a relationship-state change.
+
+_source: Phantom Doctrine Fandom Wiki (Valhalla, Timeline pages); Wikipedia "Phantom Doctrine"; YouTube "Valhalla's Death, KGB Ending" Let's Play · capture: web_fetch · enemy-tier: 3 · puzzle-tier: 0 · category: mainline · spoiler: story_
 
 ## See also
 
