@@ -274,7 +274,7 @@ _source: WebSearch 2026-09-16 (Fandom Technology Tree, Fandom Forger page, Steam
 
 _source: live-play, player-reported 2026-09-16 · capture: manual_paste · confidence: medium (player-observed price change, but conflicts with the prior recorded price -- see discrepancy note) · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_
 
-**A new identity changes only the agent's real name.** Forging a new identity rewrites the agent's first and last name; their base stats, background, nationality and portrait stay the same. An agent who seems to have vanished from a name search has usually just been renamed, not lost.
+**A new identity renames the agent; their stats and looks stay.** Besides its Heat effect (Economy note above), forging a new identity rewrites the agent's first and last name; their base stats, background, nationality and portrait stay the same (checked on two renamed agents). An agent who seems to have vanished from a name search has usually just been renamed, not lost.
 
 _source: save parse 2026-09-16, diff of a 2026-08-20 save against the live save, matched on each agent's save id; 2 agents renamed · capture: manual_paste · confidence: high (mapping marked confirmed in `save_schema.md`) · enemy-tier: 0 · puzzle-tier: 0 · category: mainline · spoiler: none_
 
