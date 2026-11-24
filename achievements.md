@@ -29,7 +29,7 @@ Default-path achievements every player earns by advancing normally.
 | 5 | Rock the Boat | **Yes** | 20.9 | Recover Marquis cargo (Ch3 houseboat, `c3_houseboat`) | chapter-bound |
 | 6 | Communication Noise | **Yes** | 18.8 | Reach the comm-station save-attempt (Ch4, `c4_commstation`); scripted-fail still counts | chapter-bound |
 | 7 | Explosive Measures | **Yes** | 17.3 | Destroy the Broadsword facility (Ch5, `c5_numbers_station`) | chapter-bound |
-| 9 | The End? - Easy | No | 15.2 | Beat the Iceberg finale on Easy (a Hard clear unlocks all three) | -- |
+| 9 | The End? - Easy | No | 15.2 | Beat the final operation on Easy (a Hard clear unlocks all three) | -- |
 | 10 | The End? - Normal | No | 8.8 | Beat the finale on Normal | -- |
 | 12 | No One Noticed | No | 7.0 | Capture Tai-Pan (Ch3, `c3_taipan_capture`) without raising alarm | missable -- classified `mastery`, see below (execution-skill achievement, listed here for narrative reference only) |
 | 14 | Spy | No | 14.8 | Extract intel from Sears Tower (Ch7, `c7_searstower`) | chapter-bound |
@@ -116,7 +116,7 @@ Non-obvious interactions -- the trigger's existence, not its execution, is the a
 
 | # | Name | Hidden | Rarity% | Trigger |
 |---|---|---|---|---|
-| 34 | Misplaced Trust | No | 12.7 | Witness an agent betrayal during a tactical mission | `confidence: low -- still unconfirmed at P2. Candidate but NOT verified: the c2_glasgow handler-goes-rogue reveal (Turncoat) is a scripted in-mission betrayal that fits this description, but P2 research did not explicitly name it as this achievement's trigger -- don't present as confirmed. Verify at P3 or from live play.` |
+| 34 | Misplaced Trust | No | 12.7 | Witness an agent betrayal during a tactical mission | `confidence: low -- still unconfirmed at P2. A candidate scripted betrayal beat exists in the campaign, but P2 research did not explicitly name it as this achievement's trigger -- don't present as confirmed. Candidate detail is withheld here (story spoiler); verify at P3 or from live play.` |
 | 46 | Silent Power | No | 11.3 | Mod a shotgun with a silencer -- non-obvious weapon/mod-type pairing | needs a silencer blueprint |
 
 _source: deep-research P1 2026-08-18 · capture: web_fetch · confidence: medium (see Misplaced Trust note) · category: mainline_
